@@ -1,9 +1,9 @@
-FROM pavia/headlight-sdk-base:latest
+FROM pavia/headlight-sdk-base-arm:latest
 
 ADD . /sensorsender
 # Change configuration to work within docker
 WORKDIR /sensorsender/headlight-app/server
-RUN fetch-rancher-metadata --applyjson "{\"AuthenticationServerURL\": \"http://headlight-api.headlight:8080/1.0/\"}" --merge HeadlightApp-Orator.json
+# RUN fetch-rancher-metadata --applyjson "{\"AuthenticationServerURL\": \"http://headlight-api.headlight:8080/1.0/\"}" --merge HeadlightApp-Orator.json
 
 WORKDIR /sensorsender
 RUN npm install
