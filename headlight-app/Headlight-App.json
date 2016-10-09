@@ -1,0 +1,20 @@
+{
+  "AppHash": "SensorSender",
+  "AppName": "Sensor Sender",
+  "AppAuthor": "Jason Hillier <jason@hillier.us>",
+  
+  "AppRecordHash": "SensorSenderRecord",
+  "AppRecordName": "SensorSender",
+  "AppRecordNamePlural": "SensorSenders",
+
+  "ProjectList": true,
+  "Backbone": true,
+
+  "Page":
+    {
+      "Index-Head-Override": false,
+      "Index-Tail-Override": false,
+      
+      "AppEntryTemplate": "SensorSender_Main"
+    }
+}

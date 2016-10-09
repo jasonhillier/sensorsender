@@ -1,0 +1,15 @@
+{
+  "name": "SensorSenderModule",
+  "version": "1.0.0",
+  "description": "Sensor Sender",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": "",
+  "author": "Jason Hillier <jason@hillier.us>",
+  "dependencies": {
+    "headlight-node-sdk": "^2.1.8",
+    "orator": "^1.0.18"
+  }
+}
