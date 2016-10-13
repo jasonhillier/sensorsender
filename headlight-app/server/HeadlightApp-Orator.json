@@ -2,10 +2,17 @@
     "Product":"Headlight-SDK-App-SensorSender",
     "Sensors":
 		{
+            "faux-button":
+			{
+				"displayName":"A fake button",
+				"type": "pseudo",
+				"range": "bool"
+			},
 			"audio":
 			{
 				"displayName":"Audio Threshold Sensor",
-				"type": "pseudo",
+				"type": "gpio",
+                "pin": 7,
 				"range": "bool"
 			}
 		}
