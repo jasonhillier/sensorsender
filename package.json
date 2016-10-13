@@ -10,6 +10,7 @@
   "author": "Jason Hillier <jason@hillier.us>",
   "dependencies": {
     "headlight-node-sdk": "^2.1.8",
-    "orator": "^1.0.18"
+    "orator": "^1.0.18",
+    "rpio-webservices": "^1.0.2"
   }
 }
