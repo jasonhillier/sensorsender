@@ -1,0 +1,20 @@
+#
+
+version: '2'
+
+services:
+  # Override settings to use for local development
+  sensorsender:
+    build: .
+    volumes:
+      - ~/sensorsender:/sensorsender
+    devices:
+      - "/dev/mem:/dev/mem"
+      - "/dev/spidev0.0:/dev/spidev0.0"
+      - "/dev/spidev0.1:/dev/spidev0.1"
+    environment:
+      - RUN_LOCAL_DEV=true
+    ports:
+      # Include nodemon debug port
+      - "5858:5858"
+      - "8080:8080"
