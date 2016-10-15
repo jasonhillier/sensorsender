@@ -12,8 +12,20 @@
 			{
 				"displayName":"Audio Threshold Sensor",
 				"type": "gpio",
-                "pin": 7,
+                		"pin": 7,
 				"range": "bool"
+			},
+			"temp":
+			{
+				"displayName":"Temp Sensor",
+				"type": "mcp3008",
+				"channel": 0
+			},
+			"soil":
+			{
+				"displayName": "Soil Sensor",
+				"type": "mcp3008",
+				"channel": 1
 			}
 		}
 }
